@@ -1,0 +1,48 @@
+input:invalid {
+    Background-color: red;
+}
+p {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+#joukkueen_nimi {
+    float: right;
+}
+#jasenFieldset{
+    display: flex;
+    flex-direction: column;   
+}
+#jasenFieldset label {
+    margin-bottom: 10px;
+}
+#jasenFieldset input {
+    float: right;
+}
+@media all and (max-width: 640px) {
+    body {
+        overflow-x: hidden;
+    }
+    #jasenFieldset{
+        display: flex;
+        flex-direction: column;   
+    }
+    #jasenFieldset label {
+        margin-bottom: 10px;
+    }
+    #jasenFieldset input {
+        float: right;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    #joukkueen_nimi {
+        float: right;
+    }
+}

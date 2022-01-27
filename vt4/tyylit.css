@@ -1,0 +1,186 @@
+* {
+    overflow: hidden;
+}
+.palkki {
+    position: absolute;
+    left: -20%;
+    top: 0%;
+    animation-iteration-count: infinite;
+    animation-name: liike;
+    animation-duration: 7s;
+    z-index: -1;
+    fill: url(#Gradient1); 
+ }
+
+ @keyframes liike {
+    from {
+        left: -20%;
+        top: 0%;
+    }
+    50% {
+        transform: translateX(135%);
+    }
+    to {
+        fill: url(#Gradient2);
+        left: -20%;
+        top: 0%;
+    }
+    
+}
+  .stop1 {
+    stop-color: black;  
+ }
+ 
+ .stop2 {
+    stop-color: green;  
+ }
+ 
+ .stop3 {
+    stop-color: black;  
+ }
+ .stop4 {
+    stop-color: black;  
+ }
+ 
+ .stop5 {
+    stop-color: cyan;  
+ }
+ 
+ .stop6 {
+    stop-color: black;  
+ }
+body {
+    background-color: black;
+}
+#pollo{
+    visibility: hidden;
+}
+#pollo_vasenYla {
+    position: absolute;
+    top: calc(50% - 276px);
+    left: calc(50% - 282px);
+    display: inline;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: keskelta_vasenYK;
+}
+#pollo_oikeaYla {
+    position: absolute;
+    top: calc(50% - 276px);
+    right: calc(50% - 282px);
+    display: inline;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: keskelta_oikeaYK;
+}
+#pollo_vasenAla {
+    position: absolute;
+    bottom: calc(50% - 276px);
+    left: calc(50% - 282px);
+    display: inline;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: keskelta_vasenAK;
+}
+#pollo_oikeaAla {
+    position: absolute;
+    bottom: calc(50% - 276px);
+    right: calc(50% - 282px);
+    display: inline;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: keskelta_oikeaAK;
+}
+#pingu1 {
+    position: absolute;
+    display: inline;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: pingu1_liikkeet;
+    z-index: -1;
+}
+#pingu2 {
+    position: absolute;
+    display: inline;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: pingu2_liikkeet;
+    z-index: -1;
+}
+@keyframes pingu1_liikkeet {
+    from {
+        top: 0%;
+        left: 0%;
+    }
+    50% {
+        top: calc(100% - 150px);
+        left: calc(50% - 75px);
+    }
+    to {
+        top: 0%;
+        left: calc(100% - 150px);
+    }
+}
+@keyframes pingu2_liikkeet {
+    from {
+        bottom: 0%;
+        right: 0%;
+    }
+    50% {
+        bottom: calc(100% - 150px);
+        right: calc(50% - 75px);
+    }
+    to {
+        bottom: 0%;
+        right: calc(100% - 150px);
+    }
+}
+
+
+@keyframes keskelta_vasenYK {
+    from {
+        top: calc(50% - 276px);
+        left: calc(50% - 282px);
+    }
+    to {
+        left: 0%;
+        top: 0%;
+        bottom: 100%;
+    }
+}
+@keyframes keskelta_oikeaYK {
+    from {
+        top: calc(50% - 276px);
+        right: calc(50% - 282px);
+    }
+    to {
+        right: 0%;
+        top: 0%;
+    }
+}
+@keyframes keskelta_vasenAK {
+    from {
+        bottom: calc(50% - 276px);
+        left: calc(50% - 282px);
+    }
+    to {
+        left: 0%;
+        bottom: 0%;
+    }
+}
+@keyframes keskelta_oikeaAK {
+    from {
+        bottom: calc(50% - 276px);
+        right: calc(50% - 282px);
+    }
+    to {
+        right: 0%;
+        bottom: 0%;
+    }
+}

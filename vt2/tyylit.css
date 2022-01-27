@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    height: 160px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+label {
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: row;
+    padding-right: 15px;
+    
+}
+
+input {
+    display: flex;
+    margin-left: auto;
+}
+
+span {
+    padding-right: 10px;
+}
+
+button {
+    display: flex;
+    margin-right: auto;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: thin;
+}
